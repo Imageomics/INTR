@@ -10,13 +10,12 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 
 ## Fine-tune model and results
 
-INTR on [DETR-R50](https://github.com) backbone, classification performance, and fine-tuned models on different datasets.
+INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classification performance, and fine-tuned models on different datasets.
 
 
 | Dataset | acc@1 | acc@5 | Model |
 |----------|----------|----------|----------|
-| CUB | 71.7 | 89.3 |  [checkpoint](https://github.com)|
-| Bird | XXX | XXX |  [checkpoint](https://github.com) |
+| CUB | 71.7 | 89.3 |  [checkpoint](https://huggingface.co/imageomics/intr-detr-r50-cub/resolve/main/checkpoint.pth)|
 
 
 
@@ -67,20 +66,32 @@ datasets
 │       └── ...
 ```
 
-## Evaluation
-To evaluate a pre-trained INTR model quantitatively on a multi GPU (e.g., 4 GPUs)
+## INTR Evaluation
+To evaluate the performance of INTR on the _CUB_ dataset, on a multi-GPU (e.g., 4 GPUs) settings, execute the below command.
 
 ```sh
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --resume <checkpoint> --dataset_path <path_to_datasets> --dataset_name <dataset_name>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --eval --resume <path/to/finetuned_checkpoint.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name>
 ```
-To evaluate a pre-trained INTR model quanlitatively for a default batch size of 1.
+## INTR Interpretation
+
+To generate visual representations of the INTR's interpretations, execute the provided command below. This command will present the interpretation for a specific class with the index <class_number>. By default, it will display interpretations from all attention heads. To focus on interpretations associated with the top queries labeled as top_q as well, set the parameter sim_query_heads to 1. Use a batch size of 1 for this visualization.
 
 ```sh
-python -m tools.visualization --eval --resume <checkpoint> --dataset_name <dataset name> --class_index <class_number>
+python -m tools.visualization --eval --resume <path/to/finetuned_checkpoint.pth> --dataset_name <dataset_name> --class_index <class_number>
 ```
-## Training (Interpretable Transformer)
-To train INTR model on a 4-GPU server on a pre-trained DETR model
+## INTR Training
+To prepare the INTR for training on a specific dataset, first modify --num_queries by setting it to the number of classes in the dataset. Within the INTR architecture, each query in the decoder is assigned the task of capturing class-specific features, which means that every query can be adapted through the learning process. Consequently, the total number of model parameters will grow in proportion to the number of classes in the dataset. To train INTR on a multi-GPU system, (e.g., 4 GPUs), execute the command below.
 
 ```sh
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --finetume <path_to_detr_checkpoint> --dataset_path <path_to_datasets> --dataset_name <dataset_name>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --finetune <path/to/detr_r50_checkpoint.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name> --num_queries <num_of_classes>
+```
+## Acknowledgment
+Our model is inspired by the DEtection TRansformer [(DETR)](https://github.com/facebookresearch/detr) method.
+
+We thank the authors of DETR for doing such great work.
+
+## Bibtext
+If you find our work helpful for your research, please consider citing the BibTeX entry.
+```sh
+... to be added ...
 ```
