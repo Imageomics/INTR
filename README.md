@@ -8,7 +8,7 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 
 ![Image Description](git_images/teaser.png)
 
-## Fine-tune model and results(#results)
+## Fine-tune model and results
 
 INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classification performance, and fine-tuned models on different datasets.
 
@@ -67,7 +67,7 @@ datasets
 ```
 
 ## INTR Evaluation
-To evaluate the performance of INTR on the _CUB_ dataset, on a multi-GPU (e.g., 4 GPUs) settings, execute the below command. INTR checkpoints are available at [Fine-tune model and results](#results)
+To evaluate the performance of INTR on the _CUB_ dataset, on a multi-GPU (e.g., 4 GPUs) settings, execute the below command. INTR checkpoints are available at Fine-tune model and results.
 
 ```sh
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --eval --resume <path/to/intr_checkpoint_cub_detr_r50.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name>
