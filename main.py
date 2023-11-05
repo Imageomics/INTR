@@ -29,7 +29,7 @@ from engine import evaluate, train_one_epoch
 
 def get_args_parser():
     parser = argparse.ArgumentParser('Set transformer detector', add_help=False)
-    parser.add_argument('--lr', default=1.00e-4, type=float) 
+    parser.add_argument('--lr', default=5.00e-5, type=float) 
     parser.add_argument('--lr_backbone', default=1.00e-5, type=float) 
     parser.add_argument('--min_lr', default=1.00e-6, type=float) 
     parser.add_argument('--weight_decay', default=1e-6, type=float)
