@@ -8,7 +8,8 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 
 ![Image Description](git_images/teaser.png)
 
-## Fine-tune model and results(#results)
+## Fine-tune model and results
+## [Fine-tune model and results](#my-section)
 
 INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classification performance, and fine-tuned models on different datasets.
 
