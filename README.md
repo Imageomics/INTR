@@ -8,7 +8,7 @@ In the INTR model, each query in the decoder is responsible for the prediction o
 
 ![Image Description](git_images/teaser.png)
 
-## Fine-tune model and results
+## Fine-tune models and results
 
 INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classification performance, and fine-tuned models on different datasets.
 
@@ -16,6 +16,7 @@ INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classific
 | Dataset | acc@1 | acc@5 | Model |
 |----------|----------|----------|----------|
 | CUB | 71.7 | 89.3 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_cub_detr_r50.pth)|
+| Bird | 97.4 | 99.2 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_bird_detr_r50.pth)|
 
 
 
