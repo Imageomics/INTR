@@ -15,8 +15,9 @@ INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classific
 
 | Dataset | acc@1 | acc@5 | Model |
 |----------|----------|----------|----------|
-| CUB | 71.7 | 89.3 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_cub_detr_r50.pth)|
-| Bird | 97.4 | 99.2 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_bird_detr_r50.pth)|
+| [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/) | 71.8 | 89.3 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_cub_detr_r50.pth)|
+| [Bird](https://www.kaggle.com/datasets/gpiosenka/100-bird-species) | 97.4 | 99.2 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_bird_detr_r50.pth)|
+| [Butterfly](https://huggingface.co/datasets/imageomics/Cambridge_butterfly/resolve/main/butterfly.zip?download=true) | 95.0 | 98.3 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_bird_detr_r50.pth)|
 
 
 
@@ -71,7 +72,7 @@ datasets
 To evaluate the performance of INTR on the _CUB_ dataset, on a multi-GPU (e.g., 4 GPUs) settings, execute the below command. INTR checkpoints are available at Fine-tune model and results.
 
 ```sh
-CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --eval --resume <path/to/intr_checkpoint_cub_detr_r50.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port 12345 --use_env main.py --eval --resume <path/to/intr_checkpoint_cub_detr_r50.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name> 
 ```
 ## INTR Interpretation
 
