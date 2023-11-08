@@ -1,6 +1,6 @@
 # INTR: A Simple Interpretable Transformer for Fine-grained Image Classification and Analysis
 
-This repo is the official implementation of [INTR: A Simple Interpretable Transformer for Fine-grained Image Classification and Analysis](https://arxiv.org/pdf/2311.04157.pdf). It currently includes code and models for the interpretable task. <br>
+This repo is the official implementation of [INTR: A Simple Interpretable Transformer for Fine-grained Image Classification and Analysis](https://arxiv.org/pdf/2311.04157.pdf). It currently includes code and models for the interpretation of fine-grained data. <br>
 
 
 INTR is a novel usage of Transformers to make image classification interpretable. In INTR, we investigate a proactive approach to classification, asking each class to look for itself in an image. We learn class-specific queries (one for each class) as input to the decoder, allowing them to look for their presence in an image via cross-attention.  We show that INTR intrinsically encourages each class to attend distinctly; the cross-attention weights thus provide a meaningful interpretation of the model's prediction. Interestingly, via multi-head cross-attention, INTR could learn to localize different attributes of a class, making it particularly suitable for fine-grained classification and analysis.
