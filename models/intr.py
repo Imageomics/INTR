@@ -122,23 +122,23 @@ def build(args):
 
     if args.dataset_name==   'cub':
         args.num_queries=200
-    elif args.dataset_name== 'bird525':
-        args.num_queries=525
-    elif args.dataset_name== 'fish':
-        args.num_queries=183
-    elif args.dataset_name== 'dog':
-        args.num_queries=120
-    elif args.dataset_name== 'butterfly':
-        args.num_queries=65
-    elif args.dataset_name== 'pet':
-        args.num_queries=37
-    elif args.dataset_name== 'car':
-        args.num_queries=196
-    elif args.dataset_name== 'craft':
-        args.num_queries=100
-    else:
-        print ("Enter a valid dataset") 
-        exit()
+    # elif args.dataset_name== 'bird525':
+    #     args.num_queries=525
+    # elif args.dataset_name== 'fish':
+    #     args.num_queries=183
+    # elif args.dataset_name== 'dog':
+    #     args.num_queries=120
+    # elif args.dataset_name== 'butterfly':
+    #     args.num_queries=65
+    # elif args.dataset_name== 'pet':
+    #     args.num_queries=37
+    # elif args.dataset_name== 'car':
+    #     args.num_queries=196
+    # elif args.dataset_name== 'craft':
+    #     args.num_queries=100
+    # else:
+    #     print ("Enter a valid dataset") 
+    #     exit()
 
     device = torch.device(args.device)
 
