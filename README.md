@@ -20,7 +20,7 @@ INTR on [DETR-R50](https://github.com/facebookresearch/detr) backbone, classific
 |----------|----------|----------|----------|
 | [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/) | 71.8 | 89.3 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_cub_detr_r50.pth)|
 | [Bird](https://www.kaggle.com/datasets/gpiosenka/100-bird-species) | 97.4 | 99.2 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_bird_detr_r50.pth)|
-| [Butterfly](https://huggingface.co/datasets/imageomics/Cambridge_butterfly/resolve/main/butterfly.zip?download=true) | 95.0 | 98.3 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_bird_detr_r50.pth)|
+| [Butterfly](https://huggingface.co/datasets/imageomics/Cambridge_butterfly/resolve/main/butterfly.zip?download=true) | 95.0 | 98.3 |  [checkpoint](https://huggingface.co/imageomics/INTR/resolve/main/intr_checkpoint_butterfly_detr_r50.pth?download=true)|
 
 
 
