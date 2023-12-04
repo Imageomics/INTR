@@ -95,6 +95,9 @@ Our model is inspired by the DEtection TRansformer [(DETR)](https://github.com/f
 
 We thank the authors of DETR for doing such great work.
 
+[![Citation](https://img.shields.io/badge/Citation-10.48550%2FarXiv.2311.04157-blue)](https://doi.org/10.48550/arXiv.2311.04157)
+
+
 ## Bibtext
 If you find our work helpful for your research, please consider citing the BibTeX entry.
 ```sh
