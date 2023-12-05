@@ -10,8 +10,50 @@ message: >-
   metadata from this file.
 type: software
 authors:
-  - family-names: Paul
-    given-names: Dipanjyoti
+  - given-names: Dipanjyoti
+    family-names: Paul
+    email: paul.1164@osu.edu
+    affiliation: The Ohio State University
+    orcid: 'https://orcid.org/0000-0001-9079-7524'
+  - given-names: Arpita
+    family-names: Chowdhury
+  - given-names: Xinqi
+    family-names: Xiong
+  - given-names: Feng-Ju
+    family-names: Chang
+  - given-names: David
+    family-names: Carlyn
+  - given-names: Samuel
+    family-names: Stevens
+  - given-names: Kaiya
+    family-names: Provost
+  - given-names: Anuj
+    family-names: Karpatne
+  - given-names: Bryan
+    family-names: Carstens
+  - given-names: Daniel
+    family-names: Rubenstein
+  - given-names: Charles
+    family-names: Stewart
+  - given-names: Tanya
+    family-names: Berger-Wolf
+  - given-names: Yu
+    family-names: Su
+  - given-names: Wei-Lun
+    family-names: Chao
+  - {}
 identifiers:
   - type: doi
     value: 10.48550/arXiv.2311.04157
+repository-code: 'https://github.com/facebookresearch/detr'
+keywords:
+  - explainable-ai
+  - interpretation
+  - imageomics
+  - fine-grained-classification
+  - transformer
+  - computer-vision
+license: Apache-2.0
+commit: INTR
+version: 1.0.0
+date-released: '2023-09-27'
