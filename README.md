@@ -98,12 +98,12 @@ We thank the authors of DETR for doing such great work.
 ## Bibtext [![Paper](https://img.shields.io/badge/Paper-10.48550%2FarXiv.2311.04157-blue)](https://doi.org/10.48550/arXiv.2311.04157)
 If you find our work helpful for your research, please consider citing the BibTeX entry.
 
-``sh
+```sh
 @article{paul2023simple,
   title={A Simple Interpretable Transformer for Fine-Grained Image Classification and Analysis},
   author={Paul, Dipanjyoti and Chowdhury, Arpita and Xiong, Xinqi and Chang, Feng-Ju and Carlyn, David and Stevens, Samuel and Provost, Kaiya and Karpatne, Anuj and Carstens, Bryan and Rubenstein, Daniel and Stewart, Charles and Berger-Wolf, Tanya and Su, Yu and Chao, Wei-Lun},
   journal={arXiv preprint arXiv:2311.04157},
   year={2023}
 }
-``
+```
 
