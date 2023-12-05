@@ -45,7 +45,7 @@ authors:
 identifiers:
   - type: doi
     value: 10.48550/arXiv.2311.04157
-repository-code: 'https://github.com/facebookresearch/detr'
+repository-code: 'https://github.com/Imageomics/INTR'
 keywords:
   - explainable-ai
   - interpretation
