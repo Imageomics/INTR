@@ -41,7 +41,6 @@ authors:
     family-names: Su
   - given-names: Wei-Lun
     family-names: Chao
-  - {}
 identifiers:
   - type: doi
     value: 10.48550/arXiv.2311.04157
