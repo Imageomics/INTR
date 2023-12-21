@@ -84,6 +84,10 @@ To generate visual representations of the INTR's interpretations, execute the pr
 ```sh
 python -m tools.visualization --eval --resume <path/to/intr_checkpoint_cub_detr_r50.pth> --dataset_path <path/to/datasets> --dataset_name <dataset_name> --class_index <class_number>
 ```
+
+*Inference time single-image prediction and visualization:* We've also provided a Jupyter Notebook, [demo.ipynb](https://github.com/Imageomics/INTR/blob/main/demo.ipynb), designed for single-image prediction and visualization during the inference process. Please note that the demo is focused on the CUB dataset.
+
+
 ## INTR Training
 To prepare INTR for training, use the pretrained model [DETR-R50](https://github.com/facebookresearch/detr). To train for a particular dataset, modify '--num_queries' by setting it to the number of classes in the dataset. Within the INTR architecture, each query in the decoder is assigned the task of capturing class-specific features, which means that every query can be adapted through the learning process. Consequently, the total number of model parameters will grow in proportion to the number of classes in the dataset. To train INTR on a multi-GPU system, (e.g., 4 GPUs), execute the command below.
 
