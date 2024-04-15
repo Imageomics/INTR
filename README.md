@@ -1,4 +1,4 @@
-# INTR: A Simple Interpretable Transformer for Fine-grained Image Classification and Analysis
+# INTR: A Simple Interpretable Transformer for Fine-grained Image Classification and Analysis (ICLR 2024)
 
 This repo is the official implementation of [INTR: A Simple Interpretable Transformer for Fine-grained Image Classification and Analysis](https://arxiv.org/pdf/2311.04157.pdf). It currently includes code and models for the interpretation of fine-grained data. We will provide a link to the upcoming ICLR 2024 proceedings for this paper when it becomes available online. <br>
 
