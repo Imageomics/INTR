@@ -103,11 +103,11 @@ We thank the authors of DETR for doing such great work.
 If you find our work helpful for your research, please consider citing the BibTeX entry.
 
 ```sh
-@article{paul2023simple,
+@inproceedings{paul2024simple,
   title={A Simple Interpretable Transformer for Fine-Grained Image Classification and Analysis},
   author={Paul, Dipanjyoti and Chowdhury, Arpita and Xiong, Xinqi and Chang, Feng-Ju and Carlyn, David and Stevens, Samuel and Provost, Kaiya and Karpatne, Anuj and Carstens, Bryan and Rubenstein, Daniel and Stewart, Charles and Berger-Wolf, Tanya and Su, Yu and Chao, Wei-Lun},
-  journal={arXiv preprint arXiv:2311.04157},
-  year={2023}
+  booktitle={International Conference on Learning Representations},
+  year={2024}
 }
 ```
 
